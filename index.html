@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MyQuote</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li class="dropdown center">
+					<a class="dropdown-btn center">MYQUOTE</a>
+					<div class="dropdown-content">
+						<a href="#">Add</a>
+						<a href="#">Show</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<!--- Form quote dan penulis data di localStorage --->
+	<div class="container">
+		<div id="add_quote">
+			<form action="" method="POST" id="form_input" onsubmit="valnsave()">
+				<div>
+					<label>Quote</label>
+					<input type="text" name="quote" id="quote" placeholder="write your quote here">
+				</div>
+				<div>
+					<label>Author</label>
+					<input type="text" name="author" id="author" placeholder="Author's name">
+				</div>
+				<br>
+				<button type="submit">Submit</button>
+			</form>
+			
+		</div>
+		<div id="show_quote">
+			<br>
+			<button id="show">Show Quote</button>
+			<br>
+			<p id="list_quote"></p>
+		</div>
+	</div>
+	<script src="js/MyQuote.js"></script>
+</body>
+</html>
